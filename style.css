@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sail&display=swap");
+
+@font-face {
+    font-family: Utopia;
+    src: url("./fonts/Utopia\ Std\ Semibold\ Display.otf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* ------navbar------ */
+
+.nav {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.nav-logo {
+    height: 3rem;
+    width: 20%;
+}
+
+.logo {
+    height: 2.5rem;
+    width: 13rem;
+    background-image: url("/images/logo.png");
+    background-size: cover;
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+nav a {
+    padding: 0 20px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    ;
+    font-family: "poppins", sans-serif;
+}
+
+nav a:hover {
+    line-height: 2rem;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #2e441e;
+}
+
+
+
+
+
+/* -----.hero-section---- */
+
+.hero-section {
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    background-image: url("/images/hero-section.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.45) 35%,
+            rgba(0, 0, 0, 0.1) 60%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-content {
+    color: white;
+    gap: 5px;
+    display: flex;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    margin-left: 72px;
+    margin-top: 58px;
+    margin-bottom: auto;
+}
+
+.sub-heading {
+    color: #ddc56f;
+    font-size: 2rem;
+    font-family: "Sail", system-ui;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 0.5;
+}
+
+.heading {
+    font-family: Utopia, sans-serif;
+    font-weight: 900;
+    font-size: 3.7rem;
+    line-height: 1.2;
+}
+
+.description-separation {
+    width: 39vw;
+    height: 1.3px;
+    background-color: #675928;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.description {
+    max-width: 36vw;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+.hero-section button {
+    color: #ffffff;
+    padding: 14px 40px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+    background-color: #2f451f;
+    border: 2px solid transparent;
+}
+
+.hero-section button:hover {
+    border: 2px solid white;
+}
+
+.hero-social-media {
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.social-media-icons {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #425b33;
+    margin-top: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.social-media-icons:hover a {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* -----stats-sections----- */
+
+.stats-sections {
+    z-index: 3;
+    width: 84vw;
+    height: 90px;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -70px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.state-stats-card,
+.tribe-stats-card,
+.festival-stats-card,
+.landscapes-stats-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.stats-icons {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecefd4;
+}
+
+.stats-icons img {
+    width: 80%;
+    height: 80%;
+}
+
+.stats-separation {
+    width: 1px;
+    height: 50px;
+    background-color: #080704;
+}
+
+
+
+
+/* divider-sections */
+
+.diversion-section {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.diversion-text {
+    text-align: center;
+    margin: auto;
+}
+
+.diversion-heading {
+    font-family: Utopia, sans-serif;
+    ;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.diversion-sub-heading {
+    font-size: 12px;
+}
+
+.diversion-btn {
+    margin-left: 82%;
+    padding: 7px 13px;
+    border-radius: 5px;
+    margin-top: -39px;
+    margin-right: auto;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1.5px solid #386418;
+}
+
+.divider-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.divider-heading-icon img {
+    width: 50px;
+    height: 20px;
+}
+
+
+
+
+/* ------state-card-container------ */
+
+.state-card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.state-cards {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.state-card {
+    width: 145px;
+    min-height: 246px;
+    padding: 0 10px;
+    gap: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: aliceblue;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.state-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.state-card h3 {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.state-card a {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+.state-card p {
+    font-size: 13px;
+}
+
+.state-box {
+    height: 60px;
+    width: 60px;
+    margin-top: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-color);
+}
+
+#mountain-img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.state-box img {
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+    display: block;
+}
+
+#Arunachal-Pradesh {
+    --theme-color: #d46d2b;
+}
+
+#Assam {
+    --theme-color: #5b7246;
+}
+
+#Meghalaya {
+    --theme-color: #417777;
+}
+
+#Manipur {
+    --theme-color: #bd5135;
+}
+
+#Mizoram {
+    --theme-color: #927398;
+}
+
+#Nagaland {
+    --theme-color: #456da3;
+}
+
+#Tripura {
+    --theme-color: #b3802f;
+}
+
+
+
+
+/* -- featured-destinations-section -- */
+
+
+.slider-btn {
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid #386418;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+}
+
+.travelers-prev,
+.destination-prev {
+    margin-right: -30px;
+}
+
+.travelers-next,
+.destination-next {
+    margin-left: -30px;
+}
+
+
+
+.next-place i,
+.prev-place i {
+    font-size: 20px;
+}
+
+
+
+
+
+/* featured-destinations-section */
+
+
+
+.featured-destinations-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 15px;
+}
+
+.destinations-place {
+    gap: 1px;
+    width: 36vh;
+    height: 38vh;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+
+.destination-image {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
+.destination-image:hover img {
+    scale: 1.2;
+}
+
+.destinations-place p,
+.destinations-place h4 {
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+.destinations-place h4 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.destinations-place p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.destinations-place i {
+    color: #386418;
+}
+
+
+
+
+
+/* ---- top-6-place-section ---- */
+
+
+.top-6-place {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 15px;
+}
+
+.top-place {
+    width: 29vh;
+    height: 38vh;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+
+.top-place-img {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.top-place-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
+.top-place-img:hover img {
+    scale: 1.2;
+}
+
+.icon-image {
+    height: 45px;
+    width: 45px;
+    z-index: 1;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #324529;
+    border: 2px solid white;
+}
+
+#mountain {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.icon-image img {
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+}
+
+.top-place p {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-card{
+     display: flex;
+     align-items: center;
+}
+
+.review-profile{
+    height: 200px;
+    width: 200px;
+}
+
+.review-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.rating{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.sapce {
+    margin-top: 3rem;
+}
