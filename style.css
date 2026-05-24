@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Utopia;
-    src: url("./fonts/Utopia\ Std\ Semibold\ Display.otf");
+    src: url("./fonts/Utopia\ Std\ Semibold\ Display.woff2");
 }
 
 
@@ -36,7 +36,7 @@ body {
 .logo {
     height: 2.5rem;
     width: 13rem;
-    background-image: url("/images/logo.png");
+    background-image: url("/images/logo.webp");
     background-size: cover;
     margin-right: auto;
     margin-left: 1rem;
@@ -70,7 +70,7 @@ nav a:hover {
     position: relative;
     height: 75vh;
     width: 100%;
-    background-image: url("/images/hero-section.png");
+    background-image: url("/images/hero-section.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
