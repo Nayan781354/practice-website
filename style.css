@@ -70,7 +70,7 @@ nav a:hover {
     position: relative;
     height: 75vh;
     width: 100%;
-    background-image: url("/images/hero-section.webp");
+    background-image: url("./images/hero-section.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
