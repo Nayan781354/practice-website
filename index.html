@@ -1,246 +1,250 @@
-<!doctyae html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Seven Sisters of North-East</title>
-  </head>
-  <body>
-    <!-- nav section -->
 
-    <nav class="nav">
-      <div class="nav-logo">
-        <div class="logo"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../nav&foofer-css/nav&footer.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Seven Sisters of North-East</title>
+</head>
+
+
+<body class="menu-open">
+
+  <!-- nav section -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="logo mobile-logo"></div>
+    </div>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-active">HOME</a>
+      <a href="#explore-states">STATES</a>
+      <a href="#">CULTURE</a>
+      <a href="#">NATURE</a>
+      <a href="#">GALLERY</a>
+      <a href="#">CONTACT</a>
+    </div>
+    <div class="search-box">
+      <input type="text" name="destination-search" placeholder="Where would you like to explore?" class="search-input">
+      <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="humbarger_icon">
+        <i class="fa-solid fa-bars" onclick=showSlidebar()></i>
+        <i class="fa-solid fa-xmark" onclick=closeSlidebar()></i>
       </div>
-      <a href="" id="home">HOME</a>
-      <a href="" id="states">STATES</a>
-      <a href="" id="culture">CULTURE</a>
-      <a href="" id="nature">NATURE</a>
-      <a href="" id="gallery">GALLERY</a>
-      <a href="" id="travelTips">TRAVEL TIPS</a>
-      <a href="" id="contact">CONTACT</a>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- hero-section -->
+  <!-- hero-section -->
 
-    <div class="hero-section">
-      <div class="hero-content">
-        <p class="sub-heading">Explore the</p>
-        <h1 class="heading">
-          Seven Sisters <br />
-          of North-East India
-        </h1>
+  <div class="hero-section">
+    <div class="hero-content">
+      <p class="sub-heading">Explore the</p>
+      <h1 class="heading">
+        Seven Sisters <br />
+        of North-East India
+      </h1>
 
-        <div class="description-separation"></div>
+      <div class="description-separation"></div>
 
-        <p class="description">
-          A journey through untouched beauty, vibrant cultures, rich heritage
-          and timeless tradition.
-        </p>
+      <p class="description">
+        A journey through untouched beauty, vibrant cultures, rich heritage
+        and timeless tradition.
+      </p>
 
-        <button>
-          EXPLORE THE JOURNEY <i class="fa-solid fa-angle-right"></i>
-        </button>
+      <button>
+        EXPLORE THE JOURNEY <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="hero-social-media">
+      <div class="social-media-icons">
+        <a href="#" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="social-media-icons">
+        <a href="#" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="social-media-icons">
+        <a href="#" id="twitter"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+      <div class="social-media-icons">
+        <a href="https://youtu.be/Eb4Xnqaf_aY?si=F2y4ZJ6jVB0FuFOz" id="youtube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!------ stats-card-section ------>
+
+  <div class="stats-sections">
+    <div class="stats">
+      <div class="state-stats-card">
+        <div class="stats-icons">
+          <img src="./images/map.webp" alt="" />
+        </div>
+        <div class="stats-content">
+          <h2 class="stats-heading">7</h2>
+          <h4 class="stats-sub-heading">States</h4>
+          <p class="stats-description">Diverse & Unique</p>
+        </div>
       </div>
 
-      <div class="hero-social-media">
-        <div class="social-media-icons">
-          <a href="#" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+      <div class="stats-separation"></div>
+
+      <div class="tribe-stats-card">
+        <div class="stats-icons">
+          <img src="./images/native-american-converted-from-png.webp" alt="" />
         </div>
-        <div class="social-media-icons">
-          <a href="#" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <div class="stats-content">
+          <h2 class="stats-heading">220+</h2>
+          <h4 class="stats-sub-heading">Tribes</h4>
+          <p class="stats-description">Rich Tribal Heritage</p>
         </div>
-        <div class="social-media-icons">
-          <a href="#" id="twitter"
-            ><i class="fa-brands fa-square-twitter"></i
-          ></a>
+      </div>
+
+      <div class="stats-separation"></div>
+
+      <div class="festival-stats-card">
+        <div class="stats-icons">
+          <img src="./images/family.webp" alt="" />
         </div>
-        <div class="social-media-icons">
-          <a
-            href="https://youtu.be/Eb4Xnqaf_aY?si=F2y4ZJ6jVB0FuFOz"
-            id="youtube"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
+        <div class="stats-content">
+          <h2 class="stats-heading">100+</h2>
+          <h4 class="stats-sub-heading">Festivals</h4>
+          <p class="stats-description">Vibrant Celebrations</p>
+        </div>
+      </div>
+
+      <div class="stats-separation"></div>
+
+      <div class="landscapes-stats-card">
+        <div class="stats-icons">
+          <img src="./images/mountain-icon-converted-from-png.webp" alt="" />
+        </div>
+        <div class="stats-content">
+          <h2 class="stats-heading">1000+</h2>
+          <h4 class="stats-sub-heading">Landscapes</h4>
+          <p class="stats-description">Breathtaking Views</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!------ stats-card-section ------>
+  <!------ diversion-container ------>
 
-    <div class="stats-sections">
-      <div class="stats">
-        <div class="state-stats-card">
-          <div class="stats-icons">
-            <img src="./images/map.webp" alt="" />
-          </div>
-          <div class="stats-content">
-            <h2 class="stats-heading">7</h2>
-            <h4 class="stats-sub-heading">States</h4>
-            <p class="stats-description">Diverse & Unique</p>
-          </div>
-        </div>
-
-        <div class="stats-separation"></div>
-
-        <div class="tribe-stats-card">
-          <div class="stats-icons">
-            <img src="./images/native-american-converted-from-png.webp" alt="" />
-          </div>
-          <div class="stats-content">
-            <h2 class="stats-heading">220+</h2>
-            <h4 class="stats-sub-heading">Tribes</h4>
-            <p class="stats-description">Rich Tribal Heritage</p>
-          </div>
-        </div>
-
-        <div class="stats-separation"></div>
-
-        <div class="festival-stats-card">
-          <div class="stats-icons">
-            <img src="./images/family.webp" alt="" />
-          </div>
-          <div class="stats-content">
-            <h2 class="stats-heading">100+</h2>
-            <h4 class="stats-sub-heading">Festivals</h4>
-            <p class="stats-description">Vibrant Celebrations</p>
-          </div>
-        </div>
-
-        <div class="stats-separation"></div>
-
-        <div class="landscapes-stats-card">
-          <div class="stats-icons">
-            <img src="./images/mountain-icon-converted-from-png.webp" alt="" />
-          </div>
-          <div class="stats-content">
-            <h2 class="stats-heading">1000+</h2>
-            <h4 class="stats-sub-heading">Landscapes</h4>
-            <p class="stats-description">Breathtaking Views</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!------ diversion-container ------>
-
+  <div class="diversion-text">
     <div class="diversion-section">
-      <div class="diversion-text">
-        <div class="divider-heading-icon">
-          <img src="./images/divider-icon.webp" />
-          <h3 class="diversion-heading">Explore The Seven Sisters</h3>
-          <img src="./images/divider-icon - 2 (1).webp" />
-        </div>
+      <div class="divider-heading-icon">
+        <img src="./images/divider-icon.webp" />
+        <h3 class="diversion-heading" id="explore-states">Explore The Seven Sisters</h3>
+        <img src="./images/divider-icon - 2 (1).webp" />
+      </div>
 
-        <p class="diversion-sub-heading">
-          Discover the Unique cham of the every state
-        </p>
+      <p class="diversion-sub-heading">
+        Discover the Unique cham of the every state
+      </p>
+    </div>
+  </div>
+
+  <!-- state-card-container -->
+
+  <div class="state-card-container">
+    <div class="state-cards">
+      <div class="state-card" id="Arunachal-Pradesh">
+        <div class="state-box">
+          <img src="./images/mountain.webp" alt="mountain" id="mountain-img" />
+        </div>
+        <h3>Arunachal Pradesh</h3>
+        <p>Land of Rising Sun</p>
+        <a href="#" id="states">Explore State <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="state-card" id="Assam">
+        <div class="state-box">
+          <img src="./images/tea-leaf-converted-from-png.webp" alt="tea-leaf" />
+        </div>
+        <h3>Assam</h3>
+        <p>Land of Tea & Culture</p>
+        <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="state-card" id="Meghalaya">
+        <div class="state-box">
+          <img src="./images/cloud.webp" alt="cloud-img" />
+        </div>
+        <h3>Meghalaya</h3>
+        <p>Abode of Clouds</p>
+        <a href="./states/meghalaya.html">Explore State <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="state-card" id="Manipur">
+        <div class="state-box">
+          <img src="./images/deer-head.webp" alt="deer-img" />
+        </div>
+        <h3>Manipur</h3>
+        <p>Land of Jewels</p>
+        <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="state-card" id="Mizoram">
+        <div class="state-box">
+          <img src="./images/bamboo-tree.webp" alt="bamboo-img" />
+        </div>
+        <h3>Mizoram</h3>
+        <p>Land of the Hill People</p>
+        <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="state-card" id="Nagaland">
+        <div class="state-box">
+          <img src="./images/bird.webp" alt="bird-img" />
+        </div>
+        <h3>Nagaland</h3>
+        <p>The Festival Land</p>
+        <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="state-card" id="Tripura">
+        <div class="state-box">
+          <img src="./images/crown.webp" alt="crown-img" />
+        </div>
+        <h3>Tripura</h3>
+        <p>Queen of Eastern Hills</p>
+        <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
       </div>
     </div>
+  </div>
 
-    <!-- state-card-container -->
+  <!-- diversion-container -->
 
-    <div class="state-card-container">
-      <div class="state-cards">
-        <div class="state-card" id="Arunachal-Pradesh">
-          <div class="state-box">
-            <img src="./images/mountain.webp" alt="mountain" id="mountain-img" />
-          </div>
-          <h3>Arunachal Pradesh</h3>
-          <p>Land of Rising Sun</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-
-        <div class="state-card" id="Assam">
-          <div class="state-box">
-            <img src="./images/tea-leaf-converted-from-png.webp" alt="tea-leaf" />
-          </div>
-          <h3>Assam</h3>
-          <p>Land of Tea & Culture</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-
-        <div class="state-card" id="Meghalaya">
-          <div class="state-box">
-            <img src="./images/cloud.webp" alt="cloud-img" />
-          </div>
-          <h3>Meghalaya</h3>
-          <p>Abode of Clouds</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-
-        <div class="state-card" id="Manipur">
-          <div class="state-box">
-            <img src="./images/deer-head.webp" alt="deer-img" />
-          </div>
-          <h3>Manipur</h3>
-          <p>Land of Jewels</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-
-        <div class="state-card" id="Mizoram">
-          <div class="state-box">
-            <img src="./images/bamboo-tree.webp" alt="bamboo-img" />
-          </div>
-          <h3>Mizoram</h3>
-          <p>Land of the Hill People</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-
-        <div class="state-card" id="Nagaland">
-          <div class="state-box">
-            <img src="./images/bird.webp" alt="bird-img" />
-          </div>
-          <h3>Nagaland</h3>
-          <p>The Festival Land</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-
-        <div class="state-card" id="Tripura">
-          <div class="state-box">
-            <img src="./images/crown.webp" alt="crown-img" />
-          </div>
-          <h3>Tripura</h3>
-          <p>Queen of Eastern Hills</p>
-          <a href="#">Explore State <i class="fa-solid fa-angle-right"></i></a>
-        </div>
+  <div class="diversion-section">
+    <div class="diversion-text">
+      <div class="divider-heading-icon">
+        <img src="./images/divider-icon.webp" />
+        <h3 class="diversion-heading">Featured Destinations</h3>
+        <img src="./images/divider-icon - 2 (1).webp" />
       </div>
+
+      <p class="diversion-sub-heading">
+        Must-visit places that define the beauty of North-East India
+      </p>
+    </div>
+    <button type="button" class="view_all_btn">VIEW ALL DESTINATIONS</button>
+  </div>
+
+  <!---- Featured Destinations ---->
+
+  <div class="featured-destinations-section">
+    <div class="destination-slider-btn destination-prev">
+      <i class="fa-solid fa-angle-left"></i>
     </div>
 
-    <!-- diversion-container -->
-
-    <div class="diversion-section">
-      <div class="diversion-text">
-        <div class="divider-heading-icon">
-          <img src="./images/divider-icon.webp" />
-          <h3 class="diversion-heading">Featured Destinations</h3>
-          <img src="./images/divider-icon - 2 (1).webp" />
-        </div>
-
-        <p class="diversion-sub-heading">
-          Must-visit places that define the beauty of North-East India
-        </p>
-      </div>
-      <button type="button" class="diversion-btn">VIEW ALL DESTINATIONS</button>
-    </div>
-
-    <!---- Featured Destinations ---->
-
-    <div class="featured-destinations-section">
-      <div class="slider-btn destination-prev">
-        <i class="fa-solid fa-angle-left"></i>
-      </div>
+    <div class="destination-place-container">
 
       <div class="destinations-place">
         <div class="destination-image">
@@ -248,6 +252,7 @@
         </div>
         <h4>Kaziranga National Park</h4>
         <p><i class="fa-solid fa-location-dot"></i>Assam</p>
+        <a href="#" class="see_more-destinations">See More</a>
       </div>
 
       <div class="destinations-place">
@@ -256,6 +261,7 @@
         </div>
         <h4>Nohkalikai Falls</h4>
         <p><i class="fa-solid fa-location-dot"></i>Meghalaya</p>
+        <a href="#" class="see_more-destinations">See More</a>
       </div>
 
       <div class="destinations-place">
@@ -264,6 +270,7 @@
         </div>
         <h4>Tawang Monastery</h4>
         <p><i class="fa-solid fa-location-dot"></i>Arunachal Pradesh</p>
+        <a href="#" class="see_more-destinations">See More</a>
       </div>
 
       <div class="destinations-place">
@@ -272,6 +279,7 @@
         </div>
         <h4>Ummgot River</h4>
         <p><i class="fa-solid fa-location-dot"></i>Meghalaya</p>
+        <a href="#" class="see_more-destinations">See More</a>
       </div>
 
       <div class="destinations-place">
@@ -280,134 +288,486 @@
         </div>
         <h4>Ujjayanta Palace</h4>
         <p><i class="fa-solid fa-location-dot"></i>Tripura</p>
+        <a href="#" class="see_more-destinations">See More</a>
       </div>
 
-      <div class="slider-btn destination-next">
-        <i class="fa-solid fa-angle-right"></i>
+    </div>
+
+    <div class="destination-slider-btn destination-next">
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+  </div>
+
+  <!------ diversion-container ------>
+
+  <div class="diversion-section">
+    <div class="diversion-text">
+      <div class="divider-heading-icon">
+        <img src="./images/divider-icon.webp" />
+        <h3 class="diversion-heading">Top 6 Highlights</h3>
+        <img src="./images/divider-icon - 2 (1).webp" />
+      </div>
+    </div>
+  </div>
+
+  <!------ top 6 highlights-section ------>
+
+  <div class="top-6-place">
+    <div class="top-place">
+      <div class="top-place-img">
+        <img src="./images/Panchachuli_peaks-converted-from-jpg.webp" alt="Hills" />
+      </div>
+      <div class="icon-image">
+        <img src="./images/mountain.webp" alt="mountain" id="mountain-img" />
+      </div>
+      <p>Breathtaking Landscaps</p>
+    </div>
+
+    <div class="top-place">
+      <div class="top-place-img">
+        <img src="./images/culture dance.webp" alt="Dance" />
+      </div>
+      <div class="icon-image">
+        <img src="./images/tree-people-converted-from-png.webp" alt="mountain" />
+      </div>
+      <p>Vibrant Cultures</p>
+    </div>
+
+    <div class="top-place">
+      <div class="top-place-img">
+        <img src="./images/tea-garden-converted-from-jpeg.webp" alt="Garden" />
+      </div>
+      <div class="icon-image">
+        <img src="./images/leaf.webp" alt="mountain" />
+      </div>
+      <p>Lush Tea Gardents</p>
+    </div>
+
+    <div class="top-place">
+      <div class="top-place-img">
+        <img src="./images/rivers-converted-from-jpeg.webp" alt="Rivers" />
+      </div>
+      <div class="icon-image">
+        <img src="./images/wave-converted-from-png.webp" alt="mountain" />
+      </div>
+      <p>Serenne Rivers & Lakes</p>
+    </div>
+
+    <div class="top-place">
+      <div class="top-place-img">
+        <img src="./images/craft traditions.webp" alt="Traditions" />
+      </div>
+      <div class="icon-image">
+        <img src="./images/creaft.webp" alt="mountain" />
+      </div>
+      <p>Rich Traditions</p>
+    </div>
+
+    <div class="top-place">
+      <div class="top-place-img">
+        <img src="./images/traditionsonal cuisine-converted-from-jpeg.webp" alt="Cuisine" />
+      </div>
+      <div class="icon-image">
+        <img src="./images/spoon-knife-converted-from-png.webp" alt="mountain" />
+      </div>
+      <p>Delicious Cuisine</p>
+    </div>
+  </div>
+
+
+
+  <!-- diversion-section  -->
+
+  <div class="diversion-section">
+    <div class="diversion-text">
+      <div class="divider-heading-icon">
+        <img src="./images/divider-icon.webp" />
+        <h3 class="diversion-heading">What Travelers Say</h3>
+        <img src="./images/divider-icon - 2 (1).webp" />
+      </div>
+      <p class="diversion-sub-heading">
+        Discover what our happy travelers have to say about their adventures with us.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!---- review section ---->
+
+
+  <section class="travelers-section">
+    <div class="testimonial-slider-btn travelers-prev">
+      <i class="fa-solid fa-angle-left"></i>
+    </div>
+
+    <div class="travelers-container">
+      <div class="traveler-card">
+        <div class="traveler-header">
+          <div class="traveler-profile">
+            <img src="https://i.pravatar.cc/80?img=12" alt="" />
+            <div>
+              <h4>Rahul Sharma</h4>
+              <span>Delhi, India</span>
+            </div>
+          </div>
+
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <p>
+          "The landscapes, the people, the culture — North-East India is pure
+          magic!"
+        </p>
+
+        <div class="quote">
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+
+      <div class="traveler-card">
+        <div class="traveler-header">
+          <div class="traveler-profile">
+            <img src="https://i.pravatar.cc/80?img=32" alt="" />
+            <div>
+              <h4>Ananya Verma</h4>
+              <span>Mumbai, India</span>
+            </div>
+          </div>
+
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <p>
+          "Meghalaya's beauty is beyond words. A must visit for every
+          traveler."
+        </p>
+
+        <div class="quote">
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+
+      <div class="traveler-card">
+        <div class="traveler-header">
+          <div class="traveler-profile">
+            <img src="https://i.pravatar.cc/80?img=15" alt="" />
+            <div>
+              <h4>David Lee</h4>
+              <span>Singapore</span>
+            </div>
+          </div>
+
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <p>
+          "The hospitality and traditions of the people won our hearts.
+          Absolutely amazing!"
+        </p>
+
+        <div class="quote">
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-slider-btn travelers-next">
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+  </section>
+
+
+  <!-- cta-section -->
+
+
+  <div class="cta-section">
+    <div class="cta-content">
+      <img src="./images/cta-background.webp" alt="bags" class="cta-img">
+      <div class="cta-text">
+        <h2>Ready to explore the unexplored?</h2>
+        <p>Pack your bags and embark an on unforgettable journey across the Seven Sisters.</p>
+      </div>
+      <button class="cta-button">PLAN YOUR TRIP NOW <i class="fa-solid fa-arrow-right"></i></button>
+      <img src="./images/bags.webp" alt="bags" class="img2">
+    </div>
+  </div>
+
+  <div class="footer-separator"></div>
+
+
+  <!-- footer-sections -->
+
+  <footer>
+    <div class="footer-top-sections">
+
+      <!-- box1 -->
+
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./images/footer-mountain.webp" alt="mountain-img" class="brand-logo">
+          <h3 class="brand-heading">SEVEN SISTERS</h3>
+          <p class="brand-sub-heading">NORTH-EAST INDIA</p>
+          <div class="divider-line">
+            <div class="line"></div>
+            <img src="./images/footer-divider-icon.webp" alt="divider-img" class="divider-img">
+            <div class="line"></div>
+          </div>
+
+          <p class="brand-description">Discover untouched beauty, vibrant cultures and timeless traditions of
+            North-East India</p>
+
+          <div class="footer-social-media">
+            <div class="footer-media-box">
+              <a href="#" id="facebook" class="media-box"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" id="instagram" class="media-box"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" id="twitter" class="media-box"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="#" id="youtube" class="media-box"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- box2 -->
+
+      <div class="footer-content">
+        <div class="footer-heading-icon">
+          <img src="./images/footer-leaf-icon.webp" alt="icon">
+          <h3>QUICK LINKS</h3>
+          <i class="fa-solid fa-angle-down show-Btn quickLinks"></i>
+        </div>
+        <div class="footer-links mobile-quickLinks">
+          <div class="home">
+            <a href="./index.html" class="footer-active-link">
+              <i class="fa-solid fa-angle-right"></i>Home
+            </a>
+          </div>
+          <div class="states">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>States
+            </a>
+          </div>
+          <div class="cultures">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Cultures</a>
+          </div>
+          <div class="nature">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Nature
+            </a>
+          </div>
+          <div class="gallery">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Gallery
+            </a>
+          </div>
+          <div class="travel-tips">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Travel Tips
+            </a>
+          </div>
+          <div class="contact">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Contact
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-mobile-divider"></div>
+
+      <!-- box3 -->
+
+      <div class="footer-content">
+        <div class="footer-heading-icon">
+          <img src="./images/footer-leaf-icon.webp" alt="icon">
+          <h3>EXPLORE STATES</h3>
+          <i class="fa-solid fa-angle-down show-Btn explore_states"></i>
+        </div>
+        <div class="footer-links mobile-explore_states">
+          <div class="arunachal-pradesh">
+            <a href="./states/arunachal-pradesh.html">
+              <i class="fa-solid fa-angle-right"></i>Arunachal Pradesh
+            </a>
+          </div>
+
+          <div class="assam">
+            <a href="./states/assam.html">
+              <i class="fa-solid fa-angle-right"></i>Assam
+            </a>
+          </div>
+
+          <div class="meghalaya">
+            <a href="./states/meghalaya.html">
+              <i class="fa-solid fa-angle-right"></i>Meghalaya
+            </a>
+          </div>
+
+          <div class="manipur">
+            <a href="./states/manipur.html">
+              <i class="fa-solid fa-angle-right"></i>Manipur
+            </a>
+          </div>
+
+          <div class="mizoram">
+            <a href="./states/mizoram.html">
+              <i class="fa-solid fa-angle-right"></i>Mizoram
+            </a>
+          </div>
+
+          <div class="nagaland">
+            <a href="./states/nagaland.html">
+              <i class="fa-solid fa-angle-right"></i>Nagaland
+            </a>
+          </div>
+
+          <div class="tripura">
+            <a href="./states/tripura.html">
+              <i class="fa-solid fa-angle-right"></i>Tripura
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-mobile-divider"></div>
+
+
+      <!-- box4 -->
+
+      <div class="footer-content">
+        <div class="footer-heading-icon">
+          <img src="./images/footer-leaf-icon.webp" alt="icon">
+          <h3>RESOURCES</h3>
+          <i class="fa-solid fa-angle-down show-Btn resources"></i>
+        </div>
+        <div class="footer-links mobile-resources">
+          <div class="travel-tips">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Travel Tips
+            </a>
+          </div>
+          <div class="festivals">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Festivals
+            </a>
+          </div>
+          <div class="blogs">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Blogs
+            </a>
+          </div>
+          <div class="gallery">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>Gallery
+            </a>
+          </div>
+          <div class="FAQs">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>FAQs
+            </a>
+          </div>
+          <div class="about-us">
+            <a href="#">
+              <i class="fa-solid fa-angle-right"></i>About Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-mobile-divider"></div>
+
+      <div class="footer-divider"></div>
+
+
+      <div class="footer-content">
+        <div class="footer-heading-icon">
+          <img src="./images/footer-leaf-icon.webp" alt="icon">
+          <h3>CONTACT US</h3>
+          <i class="fa-solid fa-angle-down show-Btn contact_us"></i>
+        </div>
+        <div class="footer-links mobile-contact-us">
+          <p class="location"><i class="fa-solid fa-location-dot"></i>Northeast India, India</p>
+          <p class="phone-num"><i class="fa-solid fa-phone"></i>+91 7086249224</p>
+          <p class="email"><i class="fa-solid fa-envelope"></i>nayanahmed781354@gmail.com</p>
+        </div>
+
+
+
+        <div class="footer-newsletter-divider"></div>
+
+
+
+        <div class="footer-heading-icon">
+          <img src="./images/footer-leaf-icon.webp" alt="icon">
+          <h3>NEWSLETTER</h3>
+          <i class="fa-solid fa-angle-down show-Btn newsletter"></i>
+        </div>
+        <div class="footer-links mobile-newsletter">
+          <P class="newsletter-text">Subscribe to receive travel ideas, inspiration and updates.</P>
+          <div class="footer-email-box">
+            <input type="email" placeholder="Enter your email address">
+            <button class="footer-subscribe-button">SUBSCRIBE</button>
+          </div>
+          <p class="newsletter-note">
+            <img src="./icon.svg/shield-checked-svg.svg" alt="icon">We respect your privacy. No spam, ever.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!------ diversion-container ------>
 
-    <div class="diversion-section">
-      <div class="diversion-text">
-        <div class="divider-heading-icon">
-          <img src="./images/divider-icon.webp" />
-          <h3 class="diversion-heading">Top 6 Highlights</h3>
-          <img src="./images/divider-icon - 2 (1).webp" />
+    <div class="footer-mobile-divider"></div>
+
+    <div class="footer-bottom-divid">
+      <div class="footer-bottom-sections">
+        <div class="footer-bottom-content">
+          <img src="./images/footer-bottom-img.webp" alt="img">
+
+          <div class="footer-bottom-divider"></div>
+
+          <p class="footer-copyright">
+            <i class="fa-regular fa-copyright"></i>
+            2026 Seven Sisters North-East India. All rights reserved.
+          </p>
+
+          <div class="footer-bottom-divider"></div>
+
+          <div class="footer-legal-links">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+          </div>
         </div>
       </div>
-    </div>
+  </footer>
 
-    <!------ top 6 highlights-section ------>
+  <button class="back-to-top" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <script src="script.js"></script>
+</body>
 
-    <div class="top-6-place">
-      <div class="top-place">
-        <div class="top-place-img">
-          <img src="./images/Panchachuli_peaks-converted-from-jpg.webp" alt="Hills" />
-        </div>
-        <div class="icon-image">
-          <img src="./images/mountain.webp" alt="mountain" id="mountain-img" />
-        </div>
-        <p>Breathtaking Landscaps</p>
-      </div>
-
-      <div class="top-place">
-        <div class="top-place-img">
-          <img src="./images/culture dance.webp" alt="Dance" />
-        </div>
-        <div class="icon-image">
-          <img src="./images/tree-people-converted-from-png.webp" alt="mountain" />
-        </div>
-        <p>Vibrant Cultures</p>
-      </div>
-
-      <div class="top-place">
-        <div class="top-place-img">
-          <img src="./images/tea-garden-converted-from-jpeg.webp" alt="Garden" />
-        </div>
-        <div class="icon-image">
-          <img src="./images/leaf.webp" alt="mountain" />
-        </div>
-        <p>Lush Tea Gardents</p>
-      </div>
-
-      <div class="top-place">
-        <div class="top-place-img">
-          <img src="./images/rivers-converted-from-jpeg.webp" alt="Rivers" />
-        </div>
-        <div class="icon-image">
-          <img src="./images/wave-converted-from-png.webp" alt="mountain" />
-        </div>
-        <p>Serenne Rivers & Lakes</p>
-      </div>
-
-      <div class="top-place">
-        <div class="top-place-img">
-          <img src="./images/craft traditions.webp" alt="Traditions" />
-        </div>
-        <div class="icon-image">
-          <img src="./images/creaft.webp" alt="mountain" />
-        </div>
-        <p>Rich Traditions</p>
-      </div>
-
-      <div class="top-place">
-        <div class="top-place-img">
-          <img src="./images/traditionsonal cuisine-converted-from-jpeg.webp" alt="Cuisine" />
-        </div>
-        <div class="icon-image">
-          <img src="./images/spoon-knife-converted-from-png.webp" alt="mountain" />
-        </div>
-        <p>Delicious Cuisine</p>
-      </div>
-    </div>
-
-    <!-- diversion-section  -->
-
-    <div class="diversion-section">
-      <div class="diversion-text">
-        <div class="divider-heading-icon">
-          <img src="./images/divider-icon.webp" />
-          <h3 class="diversion-heading">What Travelers Say</h3>
-          <img src="./images/divider-icon - 2 (1).webp" />
-        </div>
-      </div>
-    </div>
-
-    <!---- review section ---->
-
-    <div class="user-review-section">
-      <div class="slider-btn travelers-prev">
-        <i class="fa-solid fa-angle-left"></i>
-      </div>
-
-      <div class="review-card">
-        <div class="review-profile">
-          <img src="./images/kaziranga.webp" alt="Kaziranga National Park" />
-        </div>
-        <div class="details">
-          <h4>Nayan Moni Ahmed</h4>
-          <p><i class="fa-solid fa-location-dot"></i>Assam</p>
-        </div>
-        <div class="rating">
-          <h1>*****</h1>
-        </div>
-        <!-- <p class="place-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          deserunt laudantium maiores distinctio possimus odio praesentium,
-          quasi explicabo dolorem aperiam, ipsa quibusdam. Doloremque, tempore
-          accusamus?
-        </p> -->
-      </div>
-
-      <div class="slider-btn travelers-next">
-        <i class="fa-solid fa-angle-right"></i>
-      </div>
-    </div>
-
-    <h1 class="sapce">hdiksk</h1>
-
-    <script src="SCRIPT.JS"></script>
-  </body>
 </html>
